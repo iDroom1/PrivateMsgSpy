@@ -1,8 +1,0 @@
-# List of allowed commands that players can use and tab-complete.
-allowed-commands:
-  - "say"
-  - "help"
-  - "msg"
-
-# Message sent when a player tries to use a blocked command.
-no-access-message: "§cYou do not have access to this command."

@@ -1,18 +1,63 @@
-Anti-Cheat plugin for detecting KillAura in PvP.
+# PrivateMsgSpy Plugin
 
-Preferred Version: 1.21.0+ (older versions untested)
+**PrivateMsgSpy** is a lightweight Minecraft Spigot plugin that allows server staff to **spy on private messages** between players. It provides an easy-to-use command to toggle the spy mode and view private messages.
 
-If someone is detected using KillAura, you will get a message saying "PlateouKillAura: <user> might be using KillAura" to staff members (all staff members must have the correct LuckPerms permission)
+### ✨ Features
+- **Private message monitoring**: Staff can read private messages sent between players.
+- **Simple command interface**: The `/msgspy` command allows staff to toggle spy mode on/off.
+- **Compatible with Minecraft 1.21+**: Built for the latest Spigot API.
+- **Lightweight & efficient**: No performance impact on your server.
 
-The LuckPerms permission required to see the message is:
-'plateoukillaura.notify'
+---
 
-To assign this permission to a player/group do the following:
+## ⚙️ **Installation**
 
-  For a player:
-    /lp user <username> permission set plateoukillaura.notify true
+1. Download the latest release from [releases](https://github.com/iDroom1/PrivateMsgSpy/releases).
+2. Place the `PrivateMsgSpy.jar` file into your server's `plugins` folder.
+3. Restart your server to load the plugin.
 
-  For a group:
-    /lp group <groupname> permission set plateoukillaura.notify true
+---
 
-The permission is set to default to 'op' (only server operators have it by default).
+## 📝 **Commands**
+
+| Command      | Description                                  | Permission              |
+|--------------|----------------------------------------------|-------------------------|
+| `/msgspy`    | Toggle spy mode for private messages         | `privatemsgspy.spy`      |
+
+### Command Usage:
+- `/msgspy` - Toggles the state of private message spying.
+  - When enabled, all private messages sent between players will be logged to the staff member’s console.
+
+---
+
+## 🔒 **Permissions**
+
+| Permission              | Description                                               |
+|-------------------------|-----------------------------------------------------------|
+| `privatemsgspy.spy`      | Grants permission to use the `/msgspy` command to toggle spy mode |
+
+---
+
+## 💻 **Plugin Configuration**
+
+**PrivateMsgSpy** does not require any configuration by default. However, if you'd like to customize the behavior or set up additional permissions, you can use the default permissions provided by the plugin.
+
+---
+
+## 📦 **Plugin.yml Example**
+
+Make sure to include a `plugin.yml` in the `src/main/resources/` folder of your project:
+
+```yaml
+name: PrivateMsgSpy
+version: 1.0
+main: org.idroom.privatemsgspy.PrivateMsgSpy
+api-version: 1.21
+commands:
+  msgspy:
+    description: Toggle message spy mode.
+    usage: /msgspy
+permissions:
+  privatemsgspy.spy:
+    description: Allows using the /msgspy command.
+    default: op

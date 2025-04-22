@@ -44,9 +44,7 @@
 
 ---
 
-## 📦 **Plugin.yml Example**
-
-Make sure to include a `plugin.yml` in the `src/main/resources/` folder of your project:
+## 📦 **Plugin.yml**
 
 ```yaml
 name: PrivateMsgSpy

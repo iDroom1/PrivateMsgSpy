@@ -1,0 +1,3 @@
+org\idroom\privatemsgspy\listeners\MessageListener.class
+org\idroom\privatemsgspy\PrivateMsgSpy.class
+org\idroom\privatemsgspy\commands\MsgSpyCommand.class

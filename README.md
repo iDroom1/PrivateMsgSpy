@@ -1,4 +1,4 @@
-# PrivateMsgSpy Plugin
+# PrivateMsgSpy 
 
 **PrivateMsgSpy** is a lightweight Minecraft Spigot plugin that allows server staff to **spy on private messages** between players. It provides an easy-to-use command to toggle the spy mode and view private messages.
 

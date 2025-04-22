@@ -1,0 +1,13 @@
+name: PrivateMsgSpy
+version: 1.0
+main: org.idroom.privatemsgspy.PrivateMsgSpy
+api-version: '1.21'
+commands:
+  msgspy:
+    description: Toggles message spying on or off.
+    usage: /msgspy
+    permission: spy.msg
+permissions:
+  spy.msg:
+    description: Allows use of /msgspy and message spying.
+    default: op
